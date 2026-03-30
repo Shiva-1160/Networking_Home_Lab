@@ -2,7 +2,7 @@
 
 ## Project Overview
 This project demonstrates a basic Layer 2 and Layer 3 network using GNS3 with a Linux router, Open vSwitch (OVS), and multiple hosts.  
-It focuses on understanding packet flow, switching, and interface behavior in a virtual environment.
+It focuses on understanding packet flow, switching and interface behavior in a virtual environment.
 
 ---
 
@@ -48,7 +48,7 @@ It focuses on understanding packet flow, switching, and interface behavior in a 
 
 4. **Packet Analysis**  
    - Captured traffic using Wireshark  
-   - Analyzed ARP requests, ICMP packets, and failure scenarios  
+   - Analyzed ARP requests, ICMP packets and failure scenarios  
 
 ---
 
@@ -60,10 +60,10 @@ It focuses on understanding packet flow, switching, and interface behavior in a 
 
 ## Tools Used
 - GNS3  
-- Linux Networking Tools (`ip`, `ovs-*`)  
+- Linux Networking Tools  
 - Wireshark  
 
 ---
 
 ## Outcome
-Successfully built and tested a virtual network, gaining practical understanding of switching, routing, and the difference between logical port blocking and interface shutdown.
+Successfully built and tested a virtual network, gaining practical understanding of switching, routing and the difference between logical port blocking and interface shutdown.
