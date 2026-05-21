@@ -13,7 +13,6 @@ This project demonstrates Layer 3 Switching and Inter-VLAN Routing.The lab focus
 
 The topology contains two VLANs connected to a Layer 3 switch and an external router connected to another subnet.
 
----
 
 # Network Topology
 
@@ -24,7 +23,6 @@ The topology contains two VLANs connected to a Layer 3 switch and an external ro
 * One Layer 2 OVS Switch
 * Multiple VPCS Clients
 
----
 
 # VLAN Configuration
 
@@ -38,7 +36,6 @@ Network: `192.168.2.0/29`
 | PC2        | 192.168.2.3 |
 | SVI br0.10 | 192.168.2.1 |
 
----
 
 ## VLAN 20
 
@@ -50,7 +47,6 @@ Network: `192.168.2.8/29`
 | PC4        | 192.168.2.11 |
 | SVI br0.20 | 192.168.2.9  |
 
----
 
 ## Router Link Network
 
@@ -61,7 +57,6 @@ Network: `10.0.0.0/30`
 | Layer 3 Switch | 10.0.0.1   |
 | Router-1       | 10.0.0.2   |
 
----
 
 ## External LAN
 
@@ -74,7 +69,6 @@ Network: `192.168.3.0/24`
 | PC6           | 192.168.3.3 |
 | PC7           | 192.168.3.4 |
 
----
 
 
 # Key Experiments
@@ -88,7 +82,6 @@ Verified communication between:
 
 Observed successful Layer 3 forwarding using SVI interfaces.
 
----
 
 # 2. MAC Address Learning
 
@@ -100,7 +93,6 @@ Observed:
 * VLAN-based MAC separation
 * Port-to-MAC mapping
 
----
 
 # 3. ARP Behavior
 
@@ -112,7 +104,6 @@ Observed ARP requests and replies:
 
 Captured using Wireshark.
 
----
 
 # 4. Broadcast Domain Isolation
 
@@ -124,7 +115,6 @@ Verified that:
 
 Demonstrated VLAN isolation.
 
----
 
 # 5. Layer 2 vs Layer 3 Forwarding
 
@@ -138,7 +128,6 @@ Traffic switched using MAC addresses only.
 
 Traffic routed through SVI interfaces using IP routing.
 
----
 
 # 6. Static Routing Verification
 
@@ -149,7 +138,6 @@ Confirmed:
 * Router knows VLAN networks
 * Layer 3 switch forwards traffic correctly
 
----
 
 # 7. Failure Scenarios
 
@@ -157,25 +145,21 @@ Confirmed:
 
 Clients cannot communicate outside VLAN.
 
----
 
 ## Incorrect VLAN Assignment
 
 Hosts placed in wrong VLAN lose connectivity.
 
----
 
 ## Missing Route
 
 External LAN unreachable from VLANs.
 
----
 
 ## IP Forwarding Disabled
 
 Inter-VLAN routing fails completely.
 
----
 
 # Packet Analysis
 
@@ -191,7 +175,6 @@ Observed clear distinction between:
 * Layer 2 switching
 * Layer 3 routing
 
----
 
 # Key Learnings
 
@@ -203,7 +186,6 @@ Observed clear distinction between:
 * OVS supports enterprise-style VLAN operations
 * IP forwarding is required for routing packets
 
----
 
 # Outcome
 
